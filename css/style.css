@@ -1,0 +1,260 @@
+/** Generales **/
+body{
+
+    font-size: 100%;
+    color: #004587;
+}
+
+.header{
+
+    height: 33.6vh;
+    background-image: url("../assets/images/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3em;
+    padding-left: 3em;
+}
+
+.header h1{
+
+    color: #009FE3;
+    font-size: 2em;
+}
+
+.header img{
+
+    width: 100%;
+}
+
+.icono-anterior, .icono-proximo{
+
+    width: 3em!important;
+}
+
+/** Index **/
+
+.index.container{
+
+    background-color: #EAF5FB;
+}
+
+.index .logo img{
+
+    width: 40%;
+}
+
+.index .mar-ballena{
+
+    width: 100%;
+    background-image: url("../assets/images/fondo-index.png");
+    /* padding: 5%; */
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 56vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 0;
+}
+
+.index .chiesi{
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: .5em;
+    height: 5em;
+}
+
+.index .chiesi p{
+
+    color: #54ABE4;
+    font-weight: 600;
+}
+
+.index .chiesi img{
+
+    width: 65%;
+}
+
+/** Footer **/
+footer .enlaces{
+
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E3F1FA;
+}
+
+.sup-footer{
+
+    width: 100%;
+}
+
+footer .enlaces div{
+
+    background-color: #3AA7DF;
+    height: 3.5em;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: .5em;
+    width: 20%;
+    text-align: center;
+    box-shadow: inset 2px 1px 2px 1px rgba(0,0,0,.6);
+}
+
+footer div a{
+
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+footer div a:hover{
+
+    text-decoration: none;
+}
+
+/** Paginas **/
+.hy-eficacia .header img{
+
+    width: 100%;
+}
+
+.hy-eficacia .body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+.hy-eficacia .body img.central{
+
+    width: 70%!important;
+}
+
+.hy-eficacia .body .images{
+
+    text-align: center;
+}
+
+.hy-eficacia .body .images img.icono-proximo{
+
+    float: right;
+}
+
+.hy-eficacia .body .images img.icono-anterior{
+
+    float: left;
+}
+
+.hy-eficacia .body p{
+
+    font-size: .5em;
+    width: 80%;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.hy-eficacia .body img:first-child{
+
+    width: 72%;
+}
+
+.hy-eficacia .body .caja-hyaneb img{
+
+    width: 59%;
+}
+
+.hy-eficacia .body img{
+
+    width: 60%;
+}
+
+.hy-admon .body .images{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.hy-admon .body img{
+
+    width: 95%;
+}
+
+.hy-admon .body h3{
+
+    line-height: 1;
+    text-align: center;
+    width: 30%;
+    font-weight: 700;
+}
+
+.hy-admon .body h3 span{
+
+    font-weight: 400;
+}
+
+.hy-admon .body p{
+
+    font-size: .5em;
+    font-weight: 700;
+    width: 30%;
+    text-align: center;
+}
+
+.hy-admon-1 .body img {
+    width: 90%;
+}
+
+.hy-admon-2 .body img {
+    width: 90%;
+}
+
+p.ha3{
+
+    width: 100%!important;
+    margin-top: 3em;
+}
+
+.hy-uso .body h3{
+
+    color: #04BBF3;
+}
+
+.hy-uso .body p{
+
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: .5em;
+}
+
+.hy-uso .body span{
+
+    font-weight: 600;
+}
+
+.hy-covid .body img{
+
+    width: 100%;
+}
+
+.hy-covid .body a.enlace{
+
+    line-height: 1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: .6em;
+    font-weight: 500;
+    letter-spacing: .1px;
+}
+.hy-covid .body a.enlace img{
+
+    width: 7%;
+}
