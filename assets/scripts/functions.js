@@ -6,8 +6,8 @@ function pintarEficacia(){
     console.log("Aquí");
     elements = document.getElementsByClassName("eficacia");
     elements[0].style.backgroundColor = color;
-    var URLactual = window.location.pathname;
-    alert(URLactual);
+    /* var URLactual = window.location.pathname;
+    alert(URLactual); */
 }
 
 function pintarAdmon(){
@@ -18,8 +18,8 @@ function pintarAdmon(){
     console.log("Aquí");
     elements = document.getElementsByClassName("admon");
     elements[0].style.backgroundColor = color;
-    var URLactual = window.location.pathname;
-    alert(URLactual);
+    /* var URLactual = window.location.pathname;
+    alert(URLactual); */
 }
 
 function pintarCovid(){
@@ -30,8 +30,8 @@ function pintarCovid(){
     console.log("Aquí");
     elements = document.getElementsByClassName("covid");
     elements[0].style.backgroundColor = color;
-    var URLactual = window.location.pathname;
-    alert(URLactual);
+    /* var URLactual = window.location.pathname;
+    alert(URLactual); */
 }
 
 function pintarUso(){
@@ -42,6 +42,6 @@ function pintarUso(){
     console.log("Aquí");
     elements = document.getElementsByClassName("uso");
     elements[0].style.backgroundColor = color;
-    var URLactual = window.location.pathname;
-    alert(URLactual);
+    /* var URLactual = window.location.pathname;
+    alert(URLactual); */
 }

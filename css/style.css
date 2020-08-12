@@ -73,6 +73,11 @@ section.container-fluid a:hover{
     z-index: 4;
 }
 
+/* footer .enlaces a:focus{
+
+    background-color: crimson;
+} */
+
 /** Index **/
 
 .index.container-fluid{
@@ -143,6 +148,11 @@ footer .enlaces{
 footer .enlaces a:hover{
 
     color: #fff;
+}
+
+footer .enlaces div:focus{
+
+    background-color: chartreuse;
 }
 
 .sup-footer{
