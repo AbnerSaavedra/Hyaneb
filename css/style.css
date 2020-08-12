@@ -5,20 +5,51 @@ body{
     color: #004587;
 }
 
+body .container-fluid{
+
+    padding: 0;
+}
+
+.body h3{
+
+    position: relative;
+    z-index: 5;
+}
+
+ body section.container-fluid{
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* overflow-y: hidden; */
+} 
+
 .header{
 
     height: 33.6vh;
     background-image: url("../assets/images/header.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: right;
     padding-top: 3em;
     padding-left: 3em;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+}
+
+section.container-fluid a:hover{
+
+    text-decoration: none;
 }
 
 .header h1{
 
     color: #009FE3;
     font-size: 2em;
+    margin-bottom: 10%;
 }
 
 .header img{
@@ -31,16 +62,34 @@ body{
     width: 3em!important;
 }
 
+.body{
+
+    margin-top: -2.5em;
+}
+
+.body img{
+
+    position: relative;
+    z-index: 4;
+}
+
 /** Index **/
 
-.index.container{
+.index.container-fluid{
 
     background-color: #EAF5FB;
+    padding: 0;
 }
 
 .index .logo img{
 
     width: 40%;
+}
+
+.index .logo h3{
+
+    font-size: 3em;
+    padding: .8em;
 }
 
 .index .mar-ballena{
@@ -64,18 +113,24 @@ body{
     align-items: baseline;
     justify-content: space-around;
     padding: .5em;
-    height: 5em;
+    height: 7em;
 }
 
 .index .chiesi p{
 
     color: #54ABE4;
     font-weight: 600;
+    font-size: 1.4em;
 }
 
 .index .chiesi img{
 
     width: 65%;
+}
+
+.index footer .enlaces{
+
+    background-color: transparent;
 }
 
 /** Footer **/
@@ -84,6 +139,10 @@ footer .enlaces{
     display: flex;
     justify-content: space-evenly;
     background-color: #E3F1FA;
+}
+footer .enlaces a:hover{
+
+    color: #fff;
 }
 
 .sup-footer{
@@ -94,13 +153,15 @@ footer .enlaces{
 footer .enlaces div{
 
     background-color: #3AA7DF;
-    height: 3.5em;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    height: 3em;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     padding: .5em;
-    width: 20%;
+    width: 22%;
     text-align: center;
     box-shadow: inset 2px 1px 2px 1px rgba(0,0,0,.6);
+    font-size: 1.8em;
+    line-height: 1;
 }
 
 footer div a{
@@ -132,7 +193,7 @@ footer div a:hover{
 
 .hy-eficacia .body img.central{
 
-    width: 70%!important;
+    width: 56%!important;
 }
 
 .hy-eficacia .body .images{
@@ -172,19 +233,45 @@ footer div a:hover{
 .hy-eficacia .body img{
 
     width: 60%;
+    position: relative;
+    z-index: 5;
+}
+
+.hy-eficacia-1 .body img{
+
+    width: 57%;
+}
+
+.hy-eficacia-1 .body .images{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hy-eficacia-1 .body .images .icono-anterior{
+
+    position: absolute;
+    left: 0;
 }
 
 .hy-admon .body .images{
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
 }
 
+.hy-admon .body .icono-proximo{
+
+    position: absolute;
+    right: 0em;
+}
+
 .hy-admon .body img{
 
-    width: 95%;
+    width: 70%;
 }
 
 .hy-admon .body h3{
@@ -208,18 +295,50 @@ footer div a:hover{
     text-align: center;
 }
 
+.hy-admon-1 .body .images{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .hy-admon-1 .body img {
-    width: 90%;
+    width: 80%;
 }
 
 .hy-admon-2 .body img {
-    width: 90%;
+    width: 46%;
+}
+
+.hy-admon-2 .body .images{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hy-admon-3 .body img{
+
+    width: 60%;
+}
+
+.hy-admon-3 .body .images .icono-anterior{
+
+    position: absolute;
+    left: 0;
 }
 
 p.ha3{
 
     width: 100%!important;
     margin-top: 3em;
+}
+
+.hy-uso .body{
+
+    margin: 0 auto;
+    width: 90%;
+    margin-top: -4em;
 }
 
 .hy-uso .body h3{
@@ -239,22 +358,35 @@ p.ha3{
     font-weight: 600;
 }
 
+.hy-covid .header{
+
+    padding-top: 1.5em;
+}
+
+.hy-covid .body{
+
+    text-align: center;
+}
+
 .hy-covid .body img{
 
-    width: 100%;
+    width: 47%;
+    position: relative;
+    z-index: 5;
 }
 
 .hy-covid .body a.enlace{
 
-    line-height: 1;
-    text-decoration: none;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: .6em;
     font-weight: 500;
     letter-spacing: .1px;
+    line-height: 1;
+    text-decoration: none;
 }
 .hy-covid .body a.enlace img{
 
-    width: 7%;
+    width: 5%;
 }

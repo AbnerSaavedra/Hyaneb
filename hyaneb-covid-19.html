@@ -9,15 +9,17 @@
 </head>
 <body>
 
-    <section class="container hy-covid">
+    <section class="container-fluid hy-covid">
 
-        <div class="header">
-            <h1>
-                Broncoscopia en pacientes con COVID-19 <br>
-                <strong>Recomendaciones de consenso SEPAR y AEER</strong>
-            </h1>
-            <!-- <img src="assets/images/header.png" alt=""> -->
-        </div>
+        <a href="index.html">
+            <div class="header">
+                <h1>
+                    Broncoscopia en pacientes con COVID-19 <br>
+                    <strong>Recomendaciones de consenso SEPAR y AEER</strong>
+                </h1>
+                <!-- <img src="assets/images/header.png" alt=""> -->
+            </div>
+        </a>
 
         <div class="body">
 
@@ -33,29 +35,29 @@
 
 
         <footer>
-            <div class="">
+            <div class="container-fluid">
                 <img class="sup-footer" src="assets/images/sup-footer.png" alt="">
                 <div class="enlaces">
-                    <div class="">
-                        <a href="hyaneb-eficacia.html">
+                    <div class="eficacia">
+                        <a href="#" onclick="pintarEficacia()">
                             Hyaneb<sup>®</sup>
                             <br> Eficacia
                         </a>
                     </div>
-                    <div class="">
-                        <a href="hyaneb-admon.html">
+                    <div class="admon">
+                        <a href="hyaneb-admon.html" onclick="pintarAdmon()">
                             Hyaneb<sup>®</sup> <br>
                             Administración
                         </a>
                     </div>
-                    <div class="">
-                        <a href="hyaneb-covid-19.html">
+                    <div class="covid">
+                        <a href="hyaneb-covid-19.html" onclick="pintarCovid()">
                             Hyaneb<sup>®</sup> <br>
                             y COVID-19
                         </a>
                     </div>
-                    <div class="">
-                        <a href="hyaneb-instrucciones.html">
+                    <div class="uso">
+                        <a href="hyaneb-instrucciones.html" onclick="pintarUso()">
                             Hyaneb<sup>®</sup> <br>
                             Instruciones de uso
                         </a>
@@ -66,8 +68,8 @@
     </section>
 
 </body>
-
 <script src="assets/jquery-3.5.1.slim.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/popper.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/scripts/functions.js"></script>
 </html>
