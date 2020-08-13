@@ -9,58 +9,44 @@
 </head>
 <body>
 
-    <section class="container-fluid index">
+<div id="app">
 
-        <div class="logo text-center">
-            <img src="assets/images/logo-index-1.png" alt="">
-            <h3>
-                Movilización de secreciones mucosas en la UCI
-            </h3>
-        </div>
-        <div class="mar-ballena">
-            <div class="chiesi">
-                <div class="">
-                    <p>
-                        No olvide que en www.SmallAirways.es encontrará información de interés sobre su especialidad.
-                    </p>
-                </div>
-                <div class="text-right">
-                    <img src="assets/images/logo-chiesi-removebg-preview.png" alt="">
-                </div>
-            </div>
+    <router-view></router-view>
 
             <footer>
+                <!-- <img class="sup-footer" src="assets/images/sup-footer.png" alt=""> -->
                 <div class="container-fluid">
                     <div class="enlaces">
                         <div class="eficacia">
-                            <a href="hyaneb-eficacia.html" onclick="pintarEficacia()">
+                            <router-link to="/eficacia">
                                 Hyaneb<sup>®</sup>
                                 <br> Eficacia
-                            </a>
+                            </router-link>
                         </div>
                         <div class="admon">
-                            <a href="hyaneb-admon.html" onclick="pintarAdmon()">
+                            <router-link to="/admon">
                                 Hyaneb<sup>®</sup> <br>
                                 Administración
-                            </a>
+                            </router-link>
                         </div>
                         <div class="covid">
-                            <a href="hyaneb-covid-19.html" onclick="pintarCovid()">
+
+                            <router-link to="/covid-19">
                                 Hyaneb<sup>®</sup> <br>
                                 y COVID-19
-                            </a>
+                            </router-link>
                         </div>
                         <div class="uso">
-                            <a href="hyaneb-instrucciones.html" onclick="pintarUso()">
+                            <router-link to="/instrucciones-uso">
                                 Hyaneb<sup>®</sup> <br>
                                 Instruciones de uso
-                            </a>
+                            </router-link>
                         </div>
                 </div>
                 </div>
             </footer>
-        </div>
-    </section>
+
+</div>
 
 </body>
 
@@ -68,4 +54,7 @@
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/popper.min.js"></script>
 <script src="assets/scripts/functions.js"></script>
+<script src="assets/scripts/vue.js"></script>
+<script src="assets/scripts/vue-router.js"></script>
+<script src="assets/scripts/app.js"></script>
 </html>

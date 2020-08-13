@@ -5,9 +5,16 @@ function pintarEficacia(){
 
     console.log("Aquí");
     elements = document.getElementsByClassName("eficacia");
+    element = elements[0];
     elements[0].style.backgroundColor = color;
+    elements[0].addEventListener("focus", cambiarFondo(element));
     /* var URLactual = window.location.pathname;
     alert(URLactual); */
+}
+
+function cambiarFondo(element){
+
+    /* element.style.backgroundColor = "red"; */
 }
 
 function pintarAdmon(){

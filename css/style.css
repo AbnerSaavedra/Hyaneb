@@ -10,6 +10,17 @@ body .container-fluid{
     padding: 0;
 }
 
+#app{
+
+    overflow: hidden;
+}
+
+.body{
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 .body h3{
 
     position: relative;
@@ -18,11 +29,21 @@ body .container-fluid{
 
  body section.container-fluid{
 
-    height: 100vh;
+    height: 86vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* overflow-y: hidden; */
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-y: hidden;
+} 
+
+body section.container{
+
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
 } 
 
 .header{
@@ -73,10 +94,10 @@ section.container-fluid a:hover{
     z-index: 4;
 }
 
-/* footer .enlaces a:focus{
+footer .enlaces div:focus-within{
 
-    background-color: crimson;
-} */
+    background-color: #004587;
+}
 
 /** Index **/
 
@@ -259,12 +280,17 @@ footer div a:hover{
     justify-content: center;
 }
 
-.hy-eficacia-1 .body .images .icono-anterior{
+.body .images .icono-anterior{
 
     position: absolute;
     left: 0;
 }
 
+.body .images .icono-proximo{
+
+    position: absolute;
+    right: 0;
+}
 .hy-admon .body .images{
 
     display: flex;
@@ -348,7 +374,7 @@ p.ha3{
 
     margin: 0 auto;
     width: 90%;
-    margin-top: -4em;
+    /* margin-top: -4em; */
 }
 
 .hy-uso .body h3{
