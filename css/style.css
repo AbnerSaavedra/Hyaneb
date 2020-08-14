@@ -38,6 +38,10 @@ body .container-fluid{
     margin-bottom: -4em;
     position: relative;
     z-index: 5;
+    background-image: url("../assets/images/imagen-footer.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
 } 
 
 body section.container{
@@ -72,7 +76,7 @@ section.container-fluid a:hover{
 .header h1{
 
     color: #009FE3;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 10%;
 }
 
@@ -84,11 +88,6 @@ section.container-fluid a:hover{
 .icono-anterior, .icono-proximo{
 
     width: 3em!important;
-}
-
-.body{
-
-    margin-top: -2.5em;
 }
 
 .body img{
@@ -134,20 +133,6 @@ section.container-fluid a:hover{
     margin-bottom: 5%;
 }
 
-/* .index .mar-ballena{
-
-    width: 100%;
-    background-image: url("../assets/images/fondo-index.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    height: 56vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 0;
-} */
-
 .index .chiesi{
 
     display: flex;
@@ -176,6 +161,12 @@ footer{
     /* margin-top: -6em; */
     position: relative;
     z-index: 7;
+}
+
+.imagen-footer{
+
+    position: relative;
+    bottom: -1em; 
 }
 
 footer .enlaces{
@@ -397,7 +388,7 @@ p.ha3{
 
     margin: 0 auto;
     width: 90%;
-    /* margin-top: -4em; */
+    margin-bottom: 8%;
 }
 
 .hy-uso .body h3{
