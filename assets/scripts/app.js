@@ -60,7 +60,7 @@ const Portada = {
     <section class="container-fluid index">
 
         <div class="logo text-center">
-            <img src="assets/images/logo-index-1.png" alt="">
+            <img src="assets/images/logo-index.png" alt="">
             <h3>
                 Movilización de secreciones mucosas en la UCI
             </h3>
@@ -118,7 +118,6 @@ const Eficacia = {
                 </p>
             </div>
     </section>
-    <img class="sup-footer" src="assets/images/sup-footer.png" alt="">
     `
 }
 

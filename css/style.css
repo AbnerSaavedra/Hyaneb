@@ -29,12 +29,15 @@ body .container-fluid{
 
  body section.container-fluid{
 
-    height: 86vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     overflow: hidden;
     overflow-y: hidden;
+    margin-bottom: -4em;
+    position: relative;
+    z-index: 5;
 } 
 
 body section.container{
@@ -94,10 +97,10 @@ section.container-fluid a:hover{
     z-index: 4;
 }
 
-footer .enlaces div:focus-within{
+/* footer .enlaces div:focus-within{
 
     background-color: #004587;
-}
+} */
 
 /** Index **/
 
@@ -105,6 +108,13 @@ footer .enlaces div:focus-within{
 
     background-color: #EAF5FB;
     padding: 0;
+    background-image: url(../assets/images/fondo-index.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .index .logo img{
@@ -114,15 +124,20 @@ footer .enlaces div:focus-within{
 
 .index .logo h3{
 
-    font-size: 3em;
+    font-size: 2em;
     padding: .8em;
+    font-weight: 700;
 }
 
 .index .mar-ballena{
 
+    margin-bottom: 5%;
+}
+
+/* .index .mar-ballena{
+
     width: 100%;
     background-image: url("../assets/images/fondo-index.png");
-    /* padding: 5%; */
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -131,7 +146,7 @@ footer .enlaces div:focus-within{
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 0;
-}
+} */
 
 .index .chiesi{
 
@@ -146,7 +161,7 @@ footer .enlaces div:focus-within{
 
     color: #54ABE4;
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 .index .chiesi img{
@@ -154,17 +169,25 @@ footer .enlaces div:focus-within{
     width: 65%;
 }
 
-.index footer .enlaces{
+/** Footer **/
 
-    background-color: transparent;
+footer{
+
+    /* margin-top: -6em; */
+    position: relative;
+    z-index: 7;
 }
 
-/** Footer **/
 footer .enlaces{
 
     display: flex;
     justify-content: space-evenly;
-    background-color: #E3F1FA;
+    background-color: transparent;
+/*     background-color: #E3F1FA; */
+}
+.index footer .enlaces{
+
+    background-color: transparent;
 }
 footer .enlaces a:hover{
 
@@ -191,7 +214,7 @@ footer .enlaces div{
     width: 22%;
     text-align: center;
     box-shadow: inset 2px 1px 2px 1px rgba(0,0,0,.6);
-    font-size: 1.8em;
+    font-size: 1.3em;
     line-height: 1;
 }
 

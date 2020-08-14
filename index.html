@@ -9,42 +9,46 @@
 </head>
 <body>
 
-<div id="app">
+<div id="kad_container">
 
-    <router-view></router-view>
+    <div id="app">
 
-            <footer>
-                <!-- <img class="sup-footer" src="assets/images/sup-footer.png" alt=""> -->
-                <div class="container-fluid">
-                    <div class="enlaces">
-                        <div class="eficacia">
-                            <router-link to="/eficacia">
-                                Hyaneb<sup>®</sup>
-                                <br> Eficacia
-                            </router-link>
-                        </div>
-                        <div class="admon">
-                            <router-link to="/admon">
-                                Hyaneb<sup>®</sup> <br>
-                                Administración
-                            </router-link>
-                        </div>
-                        <div class="covid">
-
-                            <router-link to="/covid-19">
-                                Hyaneb<sup>®</sup> <br>
-                                y COVID-19
-                            </router-link>
-                        </div>
-                        <div class="uso">
-                            <router-link to="/instrucciones-uso">
-                                Hyaneb<sup>®</sup> <br>
-                                Instruciones de uso
-                            </router-link>
-                        </div>
-                </div>
-                </div>
-            </footer>
+        <router-view></router-view>
+    
+                <footer>
+                    <!-- <img class="sup-footer" src="assets/images/sup-footer.png" alt=""> -->
+                    <div class="container-fluid">
+                        <div class="enlaces">
+                            <div class="eficacia">
+                                <router-link to="/eficacia" onclick="pintarEficacia()">
+                                    Hyaneb<sup>®</sup>
+                                    <br> Eficacia
+                                </router-link>
+                            </div>
+                            <div class="admon">
+                                <router-link to="/admon" onclick="pintarAdmon()">
+                                    Hyaneb<sup>®</sup> <br>
+                                    Administración
+                                </router-link>
+                            </div>
+                            <div class="covid">
+    
+                                <router-link to="/covid-19" onclick="pintarCovid()">
+                                    Hyaneb<sup>®</sup> <br>
+                                    y COVID-19
+                                </router-link>
+                            </div>
+                            <div class="uso">
+                                <router-link to="/instrucciones-uso" onclick="pintarUso()">
+                                    Hyaneb<sup>®</sup> <br>
+                                    Instruciones de uso
+                                </router-link>
+                            </div>
+                    </div>
+                    </div>
+                </footer>
+    
+    </div>
 
 </div>
 
@@ -57,4 +61,9 @@
 <script src="assets/scripts/vue.js"></script>
 <script src="assets/scripts/vue-router.js"></script>
 <script src="assets/scripts/app.js"></script>
+
+<script type="text/javascript"> 
+    var kad_container_width = 1920; 
+    var kad_container_height = 1080; 
+</script>
 </html>

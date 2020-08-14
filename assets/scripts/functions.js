@@ -5,16 +5,8 @@ function pintarEficacia(){
 
     console.log("Aquí");
     elements = document.getElementsByClassName("eficacia");
-    element = elements[0];
+    this.eliminarFondo1();
     elements[0].style.backgroundColor = color;
-    elements[0].addEventListener("focus", cambiarFondo(element));
-    /* var URLactual = window.location.pathname;
-    alert(URLactual); */
-}
-
-function cambiarFondo(element){
-
-    /* element.style.backgroundColor = "red"; */
 }
 
 function pintarAdmon(){
@@ -24,9 +16,8 @@ function pintarAdmon(){
 
     console.log("Aquí");
     elements = document.getElementsByClassName("admon");
+    this.eliminarFondo2();
     elements[0].style.backgroundColor = color;
-    /* var URLactual = window.location.pathname;
-    alert(URLactual); */
 }
 
 function pintarCovid(){
@@ -36,9 +27,8 @@ function pintarCovid(){
 
     console.log("Aquí");
     elements = document.getElementsByClassName("covid");
+    this.eliminarFondo3();
     elements[0].style.backgroundColor = color;
-    /* var URLactual = window.location.pathname;
-    alert(URLactual); */
 }
 
 function pintarUso(){
@@ -48,7 +38,62 @@ function pintarUso(){
 
     console.log("Aquí");
     elements = document.getElementsByClassName("uso");
+    this.eliminarFondo4();
     elements[0].style.backgroundColor = color;
-    /* var URLactual = window.location.pathname;
-    alert(URLactual); */
+}
+
+function eliminarFondo1(){
+
+    let bcolor = "#3AA7DF";
+
+    elements2 = document.getElementsByClassName("admon");
+    elements3 = document.getElementsByClassName("covid");
+    elements4 = document.getElementsByClassName("uso");
+
+    elements2[0].style.backgroundColor = bcolor;
+    elements3[0].style.backgroundColor = bcolor;
+    elements4[0].style.backgroundColor = bcolor;
+    
+}
+
+function eliminarFondo2(){
+
+    let bcolor = "#3AA7DF";
+    
+    elements1 = document.getElementsByClassName("eficacia");
+    elements3 = document.getElementsByClassName("covid");
+    elements4 = document.getElementsByClassName("uso");
+    
+    elements1[0].style.backgroundColor = bcolor;
+    elements3[0].style.backgroundColor = bcolor;
+    elements4[0].style.backgroundColor = bcolor;
+        
+}
+
+function eliminarFondo3(){
+
+    let bcolor = "#3AA7DF";
+    
+    elements1 = document.getElementsByClassName("eficacia");
+    elements2 = document.getElementsByClassName("admon");
+    elements4 = document.getElementsByClassName("uso");
+    
+    elements1[0].style.backgroundColor = bcolor;
+    elements2[0].style.backgroundColor = bcolor;
+    elements4[0].style.backgroundColor = bcolor;
+        
+}
+
+function eliminarFondo4(){
+
+    let bcolor = "#3AA7DF";
+    
+    elements1 = document.getElementsByClassName("eficacia");
+    elements2 = document.getElementsByClassName("admon");
+    elements3 = document.getElementsByClassName("covid");
+    
+    elements1[0].style.backgroundColor = bcolor;
+    elements2[0].style.backgroundColor = bcolor;
+    elements3[0].style.backgroundColor = bcolor;
+        
 }
