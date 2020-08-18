@@ -108,8 +108,8 @@ section.container-fluid a:hover{
     background-color: #EAF5FB;
     padding: 0;
     background-image: url(../assets/images/fondo-index.png);
-    background-size: cover;
-    background-position: top;
+    background-size: contain;
+    background-position: bottom;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -199,8 +199,8 @@ footer .enlaces div{
 
     background-color: #3AA7DF;
     height: 3em;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     padding: .5em;
     width: 22%;
     text-align: center;
@@ -394,7 +394,7 @@ p.ha3{
 
     margin: 0 auto;
     width: 90%;
-    margin-bottom: 8%;
+    margin-bottom: 10%;
 }
 
 .hy-uso .body h3{
