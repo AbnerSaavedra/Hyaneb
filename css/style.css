@@ -3,6 +3,7 @@ body{
 
     font-size: 100%;
     color: #004587;
+    background-color: transparent;
 }
 
 body .container-fluid{
