@@ -99,10 +99,10 @@ const Eficacia = {
 
             <div class="body">
                 <div class="row">
-                    <div class="col-md-4 text-center caja-hyaneb">
+                    <div class="col-md-3 text-center caja-hyaneb">
                         <img src="assets/images/caja-hyaneb.png" alt="">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <img src="assets/images/body-eficacia-1.png" alt="">
                     </div>
                 </div>

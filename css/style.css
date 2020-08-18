@@ -19,6 +19,7 @@ body .container-fluid{
 
     overflow-y: scroll;
     overflow-x: hidden;
+    margin-bottom: 10%;
 }
 
 .body h3{
@@ -55,12 +56,11 @@ body section.container{
 
 .header{
 
-    height: 33.6vh;
+    height: 33vh;
     background-image: url("../assets/images/header.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: right;
-    padding-top: 3em;
     padding-left: 3em;
     position: relative;
     z-index: 5;
@@ -144,7 +144,7 @@ section.container-fluid a:hover{
 
 .index .chiesi p{
 
-    color: #54ABE4;
+    color: #95CEEB;
     font-weight: 600;
     font-size: 1em;
 }
@@ -204,7 +204,7 @@ footer .enlaces div{
     padding: .5em;
     width: 22%;
     text-align: center;
-    box-shadow: inset 2px 1px 2px 1px rgba(0,0,0,.6);
+    box-shadow: inset 2px 2px 2px 2px rgba(0,0,0,.25);
     font-size: 1.3em;
     line-height: 1;
 }
@@ -233,12 +233,11 @@ footer div a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: .5em;
 }
 
 .hy-eficacia .body img.central{
 
-    width: 56%!important;
+    width: 82%!important;
 }
 
 .hy-eficacia .body .images{
@@ -267,12 +266,17 @@ footer div a:hover{
 
 .hy-eficacia .body img:first-child{
 
-    width: 72%;
+    width: 87%;
 }
 
 .hy-eficacia .body .caja-hyaneb img{
 
-    width: 59%;
+    width: 85%;
+}
+
+.hy-eficacia  .caja-hyaneb{
+
+    padding-right: 0;
 }
 
 .hy-eficacia .body img{
@@ -284,7 +288,7 @@ footer div a:hover{
 
 .hy-eficacia-1 .body img{
 
-    width: 57%;
+    width: 80%;
 }
 
 .hy-eficacia-1 .body .images{
@@ -321,15 +325,16 @@ footer div a:hover{
 
 .hy-admon .body img{
 
-    width: 70%;
+    width: 90%;
 }
 
 .hy-admon .body h3{
 
     line-height: 1;
     text-align: center;
-    width: 30%;
+    width: 42%;
     font-weight: 700;
+    margin-bottom: 3%;
 }
 
 .hy-admon .body h3 span{
@@ -341,8 +346,9 @@ footer div a:hover{
 
     font-size: .5em;
     font-weight: 700;
-    width: 30%;
+    width: 40%;
     text-align: center;
+    margin-top: 2%;
 }
 
 .hy-admon-1 .body .images{
@@ -353,11 +359,11 @@ footer div a:hover{
 }
 
 .hy-admon-1 .body img {
-    width: 80%;
+    width: 85%;
 }
 
 .hy-admon-2 .body img {
-    width: 46%;
+    width: 75%;
 }
 
 .hy-admon-2 .body .images{
@@ -369,7 +375,7 @@ footer div a:hover{
 
 .hy-admon-3 .body img{
 
-    width: 60%;
+    width: 80%;
 }
 
 .hy-admon-3 .body .images .icono-anterior{
@@ -416,11 +422,12 @@ p.ha3{
 .hy-covid .body{
 
     text-align: center;
+    margin-bottom: 10%;
 }
 
 .hy-covid .body img{
 
-    width: 47%;
+    width: 85%;
     position: relative;
     z-index: 5;
 }
@@ -435,6 +442,9 @@ p.ha3{
     letter-spacing: .1px;
     line-height: 1;
     text-decoration: none;
+    text-align: left;
+    margin: 0 auto;
+    width: 80%
 }
 .hy-covid .body a.enlace img{
 
